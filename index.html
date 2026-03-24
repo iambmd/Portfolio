@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <span class="logo-bracket">[</span>
+      <span class="logo-name">Duke</span>
+      <span class="logo-bracket">]</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#hero"     class="nav-link">Home</a></li>
+      <li><a href="#about"    class="nav-link">About</a></li>
+      <li><a href="#projects" class="nav-link">Work</a></li>
+      <li><a href="#contact"  class="nav-link">Contact</a></li>
+    </ul>
+    <button class="nav-menu-btn" id="menuBtn" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#hero"     class="mobile-link">Home</a></li>
+      <li><a href="#about"    class="mobile-link">About</a></li>
+      <li><a href="#projects" class="mobile-link">Work</a></li>
+      <li><a href="#contact"  class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-text">PORTFOLIO</div>
+    <div class="hero-content">
+      <div class="hero-eyebrow reveal">
+        <span class="eyebrow-line"></span>
+        <span>Creative Developer</span>
+        <span class="eyebrow-line"></span>
+      </div>
+      <h1 class="hero-name reveal-delay-1">
+        <span class="name-first">Your</span>
+        <em class="name-last">Name.</em>
+      </h1>
+      <p class="hero-tagline reveal-delay-2">
+        Without day one...<br/>there will be no one day.
+      </p>
+      <div class="hero-cta reveal-delay-3">
+        <a href="#projects" class="cta-primary">View My Work</a>
+        <a href="#contact"  class="cta-secondary">Get In Touch →</a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+    <div class="hero-stats reveal-delay-3">
+      <div class="stat">
+        <span class="stat-num" data-target="42">0</span>
+        <span class="stat-label">Projects</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-target="5">0</span>
+        <span class="stat-label">Years Exp.</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-target="18">0</span>
+        <span class="stat-label">Clients</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       ABOUT SECTION
+       ═══════════════════════════════════════ -->
+  <section class="about" id="about">
+    <div class="section-label">
+      <span class="label-num">01</span>
+      <span class="label-text">About Me</span>
+    </div>
+
+    <!-- ── Main intro ── -->
+    <div class="about-grid">
+      <div class="about-image-col">
+        <div class="about-image-wrapper">
+          <div class="about-image-placeholder">
+
+                 <img src="Myphoto.jpeg" alt="Your Name" />
+                 
+          </div>
+          <div class="about-image-border"></div>
+          <div class="about-badge">
+            <span>Available</span>
+            <span class="badge-dot"></span>
+            <span>for work</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-text-col">
+        <h2 class="section-title">
+          Building things<br /><em>worth remembering.</em>
+        </h2>
+        <div class="about-body">
+          <p>
+            Hello guys, I'm Duke Bui/Bùi Minh Đức/裴明德, a Vietnamese international student in the US. 
+            I'm currently a sophomore at Honors College, Rutger University - New Brunswick.
+            I'm majoring in Math and Computer Science, and planning to minor in Data Science. 
+            My goals in life is to have fun while I'm still here -- doing things I like, and caring about those I love.
+
+          </p>
+          <p>
+            With interest from math to programming and data science, I currently focus on expanding
+            my knowledge throughout my academic career, and hope that one day I can have enough 
+            experience to create something big on my own.
+          </p>
+        </div>
+        <!-- REPLACE: update skill tags to match your actual stack -->
+        <div class="skills-grid">
+          <div class="skill-tag">C/C++</div>
+          <div class="skill-tag">Python</div>
+          <div class="skill-tag">Java</div>
+          <div class="skill-tag">TypeScript</div>
+          <div class="skill-tag">PostgreSQL</div>
+          <div class="skill-tag">LaTeX</div>
+          <div class="skill-tag">Matlab</div>
+          <div class="skill-tag">Springboot</div>
+          <div class="skill-tag">PyTorch</div>
+          <div class="skill-tag">Numpy</div>
+          
+        </div>
+        <a href="#contact" class="about-cta">Let's Work Together →</a>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════════
+         SUBSECTIONS
+         ══════════════════════════════════════ -->
+    <div class="about-subsections">
+
+      <!-- ── Subsection 1: Professional Life ── -->
+      <div class="about-subsection">
+        <div class="about-image-col">
+          <div class="about-image-wrapper">
+            <div class="about-image-placeholder">
+              
+                   <img src="professional.jpg" alt="Professional life" />
+                   
+            </div>
+            <div class="about-image-border"></div>
+          </div>
+        </div>
+        <div class="about-text-col">
+          <div class="subsection-tag">💼 Professional Life</div>
+          <h3 class="subsection-title">
+            Looking closer...<br /><em>what I've done.</em>
+          </h3>
+          <div class="subsection-body">
+           
+            <p>
+              From high school, I have participated in several math competitions, 
+              as well as got exposed to competitive programming. Recently, I have had experience
+              with backend developing and independent research. 
+            </p>
+            <p>
+              As of right now, I usually say to my peers that I'm in a "non-CS" point 
+              of my life. That is, I have not been active in developing my CS technical skills,
+              but rather doing math researchs. Nevertheless, I am trying to get back on track by 
+              grinding Codeforces/LeetCode, and building some projects (like this ://) Maybe 
+              we will see road to Yellow soon (?) 
+            </p>
+          </div>
+          <!-- REPLACE: update with your actual career highlights -->
+          <div class="subsection-highlights">
+            <div class="highlight-item">
+              <span class="highlight-dot"></span>
+              <span>Mentee @Math Directed Reading Program (Feb.2026 -current) - Working on Model Theory and its applications to other mathematical fields.</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-dot"></span>
+              <span>Tutor @Math Help Center - Support students in both foundational and upper-level math courses.</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-dot"></span>
+              <span>Backend Developer @Viettel Software - Implemented RESTful APIs for customer-facing mobile applications.(</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-dot"></span>
+              <span>William Lowell Putnam Mathematical Competition 2025 - 12/120 (will get better trust) </span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-dot"></span>
+              <span>Silver Medal @HSGS Open Mathematics Olympiad 2022 </span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-dot"></span>
+              <span>Second Prize @Vietnam National Olympiad TST 2022, 2023 </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Subsection 2: Personal Life ── -->
+      <div class="about-subsection">
+        <div class="about-image-col">
+          <div class="about-image-wrapper">
+            <div class="about-image-placeholder">
+                   <img src="personal.jpg" alt="Personal life" />
+                   
+            </div>
+            <div class="about-image-border"></div>
+          </div>
+        </div>
+        <div class="about-text-col">
+          <div class="subsection-tag">🌿 Personal Life</div>
+          <h3 class="subsection-title">
+            Beyond the<br /><em>screen.</em>
+          </h3>
+          <div class="subsection-body">
+            <!-- REPLACE: share hobbies, passions, what makes you you -->
+            <p>
+              Beside working and studying, my current hobbies are table tennis and running, but
+              mainly table tennis. I continued table tennis -- my long lost sport from middle school when I come here,
+              where I found such a great club and community. I am planning to build a project on finding equipment and
+              suggestion for beginner to get used to the sport, let's see how it go! 
+
+            </p>
+            <p>
+              Running is slowly becoming my second favourite. At first, I think about this as a supplement 
+              to get myself more mobile and my legs stronger, solely for table tennis. But as long as I run, I realize 
+              this is really enjoyable, and make my day so much more productive. I just completed my first 5K in March!
+            </p>
+            <p>
+              For next year, I am expecting to have an E-board position in the Rutgers University Math Association. But there is one thing I 
+              am sure of, is that I will hold secretary position, in Rutgers Table Tennis Club, 加油！
+            </p>
+            <p>
+              I also love solo travelling, and learning new languages/cultures. When I get to the US, I have been 
+              exposed to many different backgrounds and ethnicities, and widen my perspective about the world.
+            </p>
+          </div>
+          <!-- REPLACE: update with your actual personal highlights -->
+          <div class="subsection-highlights">
+            <div class="highlight-item">
+              <span class="highlight-dot"></span>
+              <span>Upcoming Secretary @Rutgers Table Tennis Club</span>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /about-subsections -->
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <div class="section-label">
+      <span class="label-num">02</span>
+      <span class="label-text">Selected Work</span>
+    </div>
+    <h2 class="section-title projects-title">
+      Recent <em>Projects.</em>
+    </h2>
+    <div class="projects-list" id="projectsList">
+      <!-- Injected by TypeScript -->
+    </div>
+    <div class="projects-more">
+      <!-- REPLACE: update href to your real GitHub profile URL -->
+      <a href="https://github.com/iambmd" target="_blank" class="more-link">
+        View all on GitHub
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M7 17L17 7M17 7H7M17 7v10"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="section-label">
+      <span class="label-num">03</span>
+      <span class="label-text">Contact</span>
+    </div>
+    <div class="contact-inner">
+      <h2 class="contact-headline">
+        Let's build<br/><em>something great.</em>
+      </h2>
+      <p class="contact-sub">
+        I'm currently looking for REU, quant finance, AI, SWE and data science positions.
+        If you are interested, please contact me -- I will reach back to you ASAP !!!
+      </p>
+      
+      <a href="mailto:bmd.icarus@rutgers.edu" class="contact-email">
+        bmd.icarus@rutgers.edu
+        <span class="email-arrow">→</span>
+      </a>
+      <div class="social-links" id="socialLinks">
+        <!-- Injected by TypeScript -->
+      </div>
+      <div class="contact-divider"></div>
+      <!-- REPLACE: update city/location -->
+      <p class="contact-location">
+        <span class="location-dot"></span>
+        Based in New Brunswick, NJ
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-left">
+      <span class="logo-bracket">[</span>
+      <span class="logo-name">MD</span><!-- REPLACE: your initials -->
+      <span class="logo-bracket">]</span>
+    </div>
+    <p class="footer-copy">© <span id="year"></span> Duke Bui. All rights reserved.</p><!-- REPLACE: your name -->
+    <p class="footer-made">Designed &amp; built with ♥</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
